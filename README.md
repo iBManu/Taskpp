@@ -63,7 +63,7 @@ call start "" "C:\Program Files\Android\Android Studio\bin\studio64.exe"
 call expo start
 ```
 
-* Now, whenever you want to work on a React Native project, simply run autotask `run ReactNativeSetUp` in your project folder, and everything will be done automatically.
+* Now, whenever you want to work on a React Native project, simply run `autotask run ReactNativeSetUp` in your project folder, and everything will be done automatically.
 
 ### Recommendations
 
