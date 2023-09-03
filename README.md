@@ -1,13 +1,39 @@
 # Autotask
 ## EN | English
 
-Autotask is a simple CLI program that automatizes the process of writting CLI 
+**Autotask** is a command line program that automates the repetition of various commands through the creation of tasks.
 ### Installation
+
+You have several installation options. You can choose to download the source code and compile it, or you can download the pre-compiled program. If you download the pre-compiled program, skip to step 5.
+
+* Download the cpp file.
+
+* Open a console in the folder where the file is located.
+
+* Execute the following command (You need to have MinGW installed, you can download it from the following link): https://sourceforge.net/projects/mingw/
+```
+g++ -o autotask .\autojob.cpp
+or
+gcc -o autotask .\autojob.cpp
+```
+
+* Now you should have an autojob.exe file.
+
+* On the D:/ drive, create a folder called 'Autotask' and place the autotask.exe executable in it.
+
+* Configure Autotask in the Path environment variable:
+  - Open 'Edit the system environment variables' in the Windows Control Panel.
+  - Click on the 'Environment Variables...' button.
+  - There should be an environment variable named Path, click on it.
+  - Click 'New' and add the D:\Autotask directory.
+  - 
+* You now have everything set up, and typing `autotask` in any system console should launch the program.
+
 ---
 
 ## ES | Español
 
-**Autotask** es un programa de linea de comandos que automatiza la repetición de varios comandos a través de la creación de una serie de tareas.
+**Autotask** es un programa de linea de comandos que automatiza la repetición de varios comandos a través de la creación de tareas.
 
 ### Instalación
 
