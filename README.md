@@ -4,7 +4,7 @@
 **Autotask** is a command line program that automates the repetition of various commands through the creation of tasks.
 ### Installation
 
-You have several installation options. You can choose to download the source code and compile it, or you can download the pre-compiled program. If you download the pre-compiled program, skip to step 5.
+You have two installation options. You can download the source code and compile it, or you can download the pre-compiled program. If you download the pre-compiled program, skip to step 5.
 
 1. Download the cpp file.
 
@@ -63,7 +63,7 @@ call start "" "C:\Program Files\Android\Android Studio\bin\studio64.exe"
 call expo start
 ```
 
-* Now, whenever you want to work on a React Native project, simply `run autotask run ReactNativeSetUp` in your project folder, and everything will be done automatically.
+* Now, whenever you want to work on a React Native project, simply run autotask `run ReactNativeSetUp` in your project folder, and everything will be done automatically.
 
 ### Recommendations
 
@@ -78,7 +78,7 @@ call expo start
 
 ### Instalación
 
-Tienes varias opciones de instalación. Puedes decidir descargar el codigo fuente y compilarlo o puedes descargar el programa ya compilado. Si descargas el programa ya compilado, salta hasta el punto 5.
+Tienes dos opciones de instalación. Puedes descargar el codigo fuente y compilarlo o puedes descargar el programa ya compilado. Si descargas el programa ya compilado, salta hasta el punto 5.
 
 1. Descarga el archivo cpp.
    
@@ -136,7 +136,7 @@ call start "" "C:\Program Files\Android\Android Studio\bin\studio64.exe"
 call expo start
 ```
 
-* Ahora cada vez que quiera trabajar en algún proyecto con React Native, simplemente ejecuto ```autotask run ReactNativeSetUp``` en la carpeta de mi proyecto y todo se hará automáticamente.
+* Ahora cada vez que quiera trabajar en algún proyecto con React Native, simplemente ejecuto `autotask run ReactNativeSetUp` en la carpeta de mi proyecto y todo se hará automáticamente.
 
  ### Recomendaciones
 
