@@ -1,4 +1,7 @@
 # Taskpp
+
+![taskpp](https://github.com/iBManu/Taskpp/assets/70716864/d5e01949-023a-4a08-816e-e4ff34461b45)
+
 ## EN | English
 
 **Taskpp** is a command line program that automates the repetition of various commands through the creation of tasks.
