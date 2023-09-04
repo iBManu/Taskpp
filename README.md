@@ -131,7 +131,7 @@ Taskpp funciona a través del paso de comandos y parametros, con el comando ```t
 
 Crearé una tarea para automatizar el trabajo con React Native, en este caso, quiero que abra el editor Visual Studio Code, Android Studio y que inicie el servidor de Expo, para ello haré lo siguiente.
 
-* Agregó una tarea ejecutando el comando `taskpp add ReactNativeSetUp Esta tarea prepara el entorno para trabajar con React Native`
+* Agrego una tarea ejecutando el comando `taskpp add ReactNativeSetUp Esta tarea prepara el entorno para trabajar con React Native`
 
 * A continuación, en el editor de texto añado los siguientes comandos.
 ```
