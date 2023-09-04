@@ -55,7 +55,7 @@ gcc -o taskpp .\taskpp.cpp
 
 I will create a task to automate working with React Native, which involves opening Visual Studio Code, Android Studio, and starting the Expo server. Here are the steps:
 
-* Execute the command `taskpp run ReactNativeSetUp This task sets up the environment for working with React Native`.
+* Add a task by executing the command `taskpp add ReactNativeSetUp This task sets up the environment for working with React Native`.
 
 * Next, in the text editor, add the following commands:
 
@@ -69,7 +69,7 @@ call expo start
 
 ### Recommendations
 
-* It is advisable that each command within a task is preceded by call. This is due to how Windows executes various commands through batch files.
+* It is advisable that each command within a task is preceded by `call`. This is due to how Windows executes various commands through batch files.
 * To run a specific program, you should write `call start "" "programPath"`.
 
 ---
@@ -131,7 +131,7 @@ Taskpp funciona a través del paso de comandos y parametros, con el comando ```t
 
 Crearé una tarea para automatizar el trabajo con React Native, en este caso, quiero que abra el editor Visual Studio Code, Android Studio y que inicie el servidor de Expo, para ello haré lo siguiente.
 
-* Ejecuto el comando `taskpp run ReactNativeSetUp Esta tarea prepara el entorno para trabajar con React Native`
+* Agregó una tarea ejecutando el comando `taskpp add ReactNativeSetUp Esta tarea prepara el entorno para trabajar con React Native`
 
 * A continuación, en el editor de texto añado los siguientes comandos.
 ```
