@@ -45,6 +45,8 @@ gcc -o taskpp .\taskpp.cpp
 
 * `taskpp help`: This command provides a list of the program's commands and their usage.
 
+* `taskpp options`: This command allows you to change your program directory and default text editor.
+
 * `taskpp version`: This command retrieves the version of **Taskpp** that you have installed.
 
 * `taskpp info`: This command provides some information about **Taskpp**.
@@ -118,6 +120,8 @@ Taskpp funciona a través del paso de comandos y parametros, con el comando ```t
 * `taskpp list`: Con este comando muestras una lista con todas las tareas disponibles.
 
 * `taskpp help`: Con este comando obtienes una lista de los comandos del programa y su uso.
+
+* `taskpp options`: Con este comando puedes cambiar el directorio del programa y el editor de texto predeterminado.
 
 * `taskpp version`: Con este comando obtienes la versión de **Taskpp** que tienes instalada.
 
