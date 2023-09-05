@@ -1,6 +1,6 @@
 # Taskpp
 
-![taskpp](https://github.com/iBManu/Taskpp/assets/70716864/d5e01949-023a-4a08-816e-e4ff34461b45)
+![taskpp](https://github.com/iBManu/Taskpp/assets/70716864/5112b005-8b71-49d0-b854-feea2685c8e8)
 
 ## EN | English
 
