@@ -6,7 +6,7 @@
 
 **Taskpp** is a command line program that automates the repetition of various commands through the creation of tasks.
 
-The name of the app is a composition of the words task, app and cpp.
+The name of the program is a composition of the words task, app and cpp.
 
 ### Installation
 
@@ -84,7 +84,7 @@ call expo start
 
 **Taskpp** es un programa de linea de comandos que automatiza la repetición de varios comandos a través de la creación de tareas.
 
-El nombre de la aplicación es una composición de las palabras task, app y cpp.
+El nombre del programa es una composición de las palabras task, app y cpp.
 
 ### Instalación
 
