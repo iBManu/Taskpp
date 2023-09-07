@@ -25,13 +25,13 @@ gcc -o taskpp .\taskpp.cpp
 
 4. Now you should have an taskpp.exe file.
 
-5. On the D:/ drive, create a folder called 'Taskpp' and place the taskpp.exe executable in it.
+5. Put the executable in a folder, preferably in a folder just for the program.
 
 6. Configure Taskpp in the Path environment variable:
   - Open 'Edit the system environment variables' in the Windows Control Panel.
   - Click on the 'environment Variables...' button.
   - There should be an environment variable named Path, click on it.
-  - Click 'New' and add the D:\Taskpp directory.
+  - Click 'New' and add the path of the folder where the executable is located.
 
 7. You now have everything set up, and typing `taskpp` in any system console should launch the program.
 
@@ -50,8 +50,6 @@ gcc -o taskpp .\taskpp.cpp
 * `taskpp list`: This command displays a list of all available tasks.
 
 * `taskpp help`: This command provides a list of the program's commands and their usage.
-
-* `taskpp options`: This command allows you to change your program directory and default text editor.
 
 * `taskpp version`: This command retrieves the version of **Taskpp** that you have installed.
 
@@ -103,13 +101,13 @@ gcc -o taskpp .\taskpp.cpp
 
 4. Ahora deberías tener un archivo taskpp.exe.
   
-5. En el disco D:/ crea una carpeta llama 'Taskpp', coloca ahí el ejecutable taskpp.exe.
+5. Coloca el ejecutable en una carpeta, preferiblemente solo para ese programa.
   
 6. Configura taskpp en la variable de entorno Path:
    - Abre `Editar variables de entorno` en el Panel de Control de Windows.
    - Clic en el botón `variables de entorno...`.
    - Debería aparecer una varible de entorno llamada Path, clic en ella.
-   - Clic en `Nuevo` y añade la dirección D:\Taskpp.
+   - Clic en `Nuevo` y añade la dirección de la carpeta donde colocaste el ejecutable.
 
 7. Ya tienes todo configurado y escribiendo `taskpp` en cualquier consola del sistema debería iniciarse el programa.
 
@@ -128,8 +126,6 @@ Taskpp funciona a través del paso de comandos y parametros, con el comando ```t
 * `taskpp list`: Con este comando muestras una lista con todas las tareas disponibles.
 
 * `taskpp help`: Con este comando obtienes una lista de los comandos del programa y su uso.
-
-* `taskpp options`: Con este comando puedes cambiar el directorio del programa y el editor de texto predeterminado.
 
 * `taskpp version`: Con este comando obtienes la versión de **Taskpp** que tienes instalada.
 
