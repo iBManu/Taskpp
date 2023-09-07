@@ -4,10 +4,11 @@
 #include <vector>
 #include <sstream>
 #include <cstdlib>
+#include <windows.h>
 
 std::string DEFAULT_DIRECTORY = "D:/Taskpp/";
 std::string DATAFILE_NAME = DEFAULT_DIRECTORY + "dataFile.txt";
-std::string VERSION = "1.0.1";
+std::string VERSION = "1.1.0";
 std::string DEFAULT_TEXT_EDITOR = "notepad.exe";
 
 void showHelp() {
@@ -18,7 +19,6 @@ void showHelp() {
               << "- taskpp edit \"name\": Opens the given task file for editing.\n"
               << "- taskpp list: Lists all available tasks.\n"
               << "- taskpp help: Shows available commands and usage.\n"
-              << "- taskpp options: Shows some options for the program.\n"
               << "- taskpp version: Shows the version of Taskpp.\n"
               << "- taskpp info: Shows information about Taskpp.\n\n";
 }
@@ -26,69 +26,21 @@ void showHelp() {
 void showInfo() {
     std::cout << "Taskpp is simple and open source program for automatizing multiple cli tasks\n"
               << "Programming language used: C++\n"
-              << "(github.com/ibmanu)\n\n";
+              << "(github.com/ibmanu) - 2023\n\n";
 }
 
 void showVersion() {
     std::cout << "Current Taskpp version: " << VERSION << " for Windows Systems\n\n";
 }
 
-void showOptions() {
-    int option;
-    std::cout << "Available options: \n\n"
-              << "1.- Change program directory (" << DEFAULT_DIRECTORY << " is the current directory)\n"
-              << "2.- Change default text editor (" << DEFAULT_TEXT_EDITOR << " is the current text editor\n"
-              << "Press any key to go back\n\n"
-              << "Choose your option: ";
+void loadData() {
+    char buffer[MAX_PATH];
+    GetModuleFileName(NULL, buffer, MAX_PATH);
+    std::string exePath(buffer);
+    std::string exeDir = exePath.substr(0, exePath.find_last_of("\\/")) + "\\";
 
-    std::cin >> option;
-
-    switch (option)
-    {
-    case 1:
-    {
-        char directory[300];
-        std::cout << "\n\nType the full path of the new directory: ";
-        std::cin.getline(directory, 300);
-
-        DEFAULT_DIRECTORY = directory;
-
-        std::ofstream ddFile((DEFAULT_DIRECTORY + "DEFAULT_DIRECTORY_PATH.txt").c_str());
-        
-        if (ddFile.is_open()) {
-        ddFile << directory << std::endl;
-
-        ddFile.close();
-    } else {
-        std::cerr << "Error: Unable to open the file." << std::endl;
-        ddFile.close();
-    }
-        break;
-    }
-    case 2:
-    {
-        char textEditor[300];
-        std::cout << "\n\nType the new text editor executable path: ";
-        std::cin.getline(textEditor, 300);
-
-        DEFAULT_TEXT_EDITOR = textEditor;
-
-        std::ofstream dteFile((DEFAULT_DIRECTORY + "DEFAULT_TEXT_EDITOR_PATH.txt").c_str());
-        
-        if (dteFile.is_open()) {
-        dteFile << textEditor << std::endl;
-
-        dteFile.close();
-        } else {
-        std::cerr << "Error: Unable to open the file." << std::endl;
-        dteFile.close();
-    }
-        break;
-    }
-    default:
-        return;
-        break;
-    }
+    DEFAULT_DIRECTORY = exeDir;
+    DATAFILE_NAME = DEFAULT_DIRECTORY + "dataFile.txt";
 }
 
 void addTask(const std::string& name, char* argv[]) {
@@ -238,9 +190,12 @@ void listTasks() {
 }
 
 int main(int argc, char* argv[]) {
+
+    loadData();
+
     if (argc < 2) {
         std::cerr << "Usage: taskpp <command> [arguments]" << std::endl;
-        std::cout << "If you need help, type \"taskpp help\"\n\n";
+        std::cout << "If you need help, type staskpp help\"\n\n";
         return 1;
     }
 
@@ -262,8 +217,6 @@ int main(int argc, char* argv[]) {
         editTask(argv[2]);
     } else if (command == "list") {
         listTasks();
-    } else if (command == "options") {
-        showOptions();
     } else {
         std::cerr << "Command '" << command << "' not recognized" << std::endl;
         std::cout << "If you need help, type \"taskpp help\"\n\n";
