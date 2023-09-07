@@ -28,10 +28,10 @@ gcc -o taskpp .\taskpp.cpp
 5. Put the executable in a folder, preferably in a folder just for the program.
 
 6. Configure Taskpp in the Path environment variable:
-   - Open 'Edit the system environment variables' in the Windows Control Panel.
-   - Click on the 'Environment variables...' button.
+   - Open `Edit the system environment variables` in the Windows Control Panel.
+   - Click on the `Environment variables...` button.
    - There should be an environment variable named Path, click on it.
-   - Click 'New' and add the path of the folder where the executable is located.
+   - Click `New` and add the path of the folder where the executable is located.
 
 7. You now have everything set up, and typing `taskpp` in any system console should launch the program.
 
