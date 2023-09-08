@@ -27,7 +27,7 @@ gcc -o taskpp .\taskpp.cpp
 
 5. Put the executable in a folder, preferably in a folder just for the program.
 
-6. Configure Taskpp in the Path environment variable:
+6. Configure **Taskpp** in the Path environment variable:
    - Open `Edit the system environment variables` in the Windows Control Panel.
    - Click on the `Environment variables...` button.
    - There should be an environment variable named Path, click on it.
@@ -103,7 +103,7 @@ gcc -o taskpp .\taskpp.cpp
   
 5. Coloca el ejecutable en una carpeta, preferiblemente solo para ese programa.
   
-6. Configura taskpp en la variable de entorno Path:
+6. Configura **Taskpp** en la variable de entorno Path:
    - Abre `Editar variables de entorno` en el Panel de Control de Windows.
    - Clic en el botón `Variables de entorno...`.
    - Debería aparecer una varible de entorno llamada Path, clic en ella.
