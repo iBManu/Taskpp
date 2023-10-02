@@ -25,15 +25,30 @@ gcc -o taskpp .\taskpp.cpp
 
 4. Now you should have an taskpp.exe file.
 
-5. Put the executable in a folder, preferably in a folder just for the program.
+### Global use configuration
 
-6. Configure **Taskpp** in the Path environment variable:
+#### Windows
+
+1. Put the executable in a folder, preferably in a folder just for the program.
+
+2. Configure **Taskpp** in the Path environment variable:
    - Open `Edit the system environment variables` in the Windows Control Panel.
    - Click on the `Environment variables...` button.
    - There should be an environment variable named Path, click on it.
    - Click `New` and add the path of the folder where the executable is located.
 
-7. You now have everything set up, and typing `taskpp` in any system console should launch the program.
+3. You now have everything set up, and typing `taskpp` in any system console should launch the program.
+
+#### Linux
+
+1. Copy the executable file to a directory included in the PATH variable, **/usr/local/bin** for example. You can check wich directories are avaliable by typing `echo $PATH`. Use the following command to copy the program to the directory included in the PATH variable.
+      ```
+      sudo cp taskpp /usr/local/bin
+      ```
+2. If you want to remove the program, just type the following.
+      ```
+      sudo rm /usr/local/bin/taskpp
+      ```
 
 ### Use guide
 
@@ -100,16 +115,31 @@ gcc -o taskpp .\taskpp.cpp
 ```
 
 4. Ahora deberías tener un archivo taskpp.exe.
+
+### Configuración para uso global
+
+#### Windows
   
-5. Coloca el ejecutable en una carpeta, preferiblemente solo para ese programa.
+1. Coloca el ejecutable en una carpeta, preferiblemente solo para ese programa.
   
-6. Configura **Taskpp** en la variable de entorno Path:
+2. Configura **Taskpp** en la variable de entorno Path:
    - Abre `Editar variables de entorno` en el Panel de Control de Windows.
    - Clic en el botón `Variables de entorno...`.
    - Debería aparecer una varible de entorno llamada Path, clic en ella.
    - Clic en `Nuevo` y añade la dirección de la carpeta donde colocaste el ejecutable.
 
-7. Ya tienes todo configurado y escribiendo `taskpp` en cualquier consola del sistema debería iniciarse el programa.
+3. Ya tienes todo configurado y escribiendo `taskpp` en cualquier consola del sistema debería iniciarse el programa.
+
+#### Linux
+
+1. Copia el ejecutable a una carpeta incluida en la variable PATH, **/usr/local/bin** por ejemplo. Puedes consultar los directorios disponibles escribiendo `echo $PATH`. Usa el siguiente comando para copiar el ejecutable en un directorio inlcuido en la variable PATH.
+      ```
+      sudo cp taskpp /usr/local/bin
+      ```
+2. Si quieres eliminar el programa, escribe lo siguiente.
+      ```
+      sudo rm /usr/local/bin/taskpp
+      ```
 
  ### Guía de uso
 
