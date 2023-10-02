@@ -10,7 +10,7 @@ The name of the program is a composition of the words task, app and cpp.
 
 ### Installation
 
-You have two installation options. You can download the source code and compile it, or you can download the pre-compiled program. If you download the pre-compiled program, skip to step 5.
+You have two installation options. You can download the source code and compile it, or you can download the pre-compiled program. Here is the guide for compiling the **Taskpp**.
 
 1. Download the cpp file.
 
@@ -88,6 +88,8 @@ call expo start
 
 ### Recommendations
 
+#### Windows
+
 * It is advisable that each command within a task is preceded by `call`. This is due to how Windows executes various commands through batch files.
 * To run a specific program, you should write `call start "" "programPath"`.
 
@@ -101,7 +103,7 @@ El nombre del programa es una composición de las palabras task, app y cpp.
 
 ### Instalación
 
-Tienes dos opciones de instalación. Puedes descargar el codigo fuente y compilarlo o puedes descargar el programa ya compilado. Si descargas el programa ya compilado, salta hasta el punto 5.
+Tienes dos opciones de instalación. Puedes descargar el codigo fuente y compilarlo o puedes descargar el programa ya compilado. Aquí tienes una guía para compilar **Taskpp**.
 
 1. Descarga el archivo cpp.
    
@@ -177,6 +179,8 @@ call expo start
 * Ahora cada vez que quiera trabajar en algún proyecto con React Native, simplemente ejecuto `taskpp run ReactNativeSetUp` en la carpeta de mi proyecto y todo se hará automáticamente.
 
  ### Recomendaciones
+
+#### Windows
 
  * Cada comando dentro de una tarea es recomendable que lleve delante `call`, esto es debido a como Windows ejecuta varios comandos a través de archivos por lotes.
  * Para ejecutar un programa concreto, debemos escribir `call start "" "rutadelprograma"`.
