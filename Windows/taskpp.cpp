@@ -195,7 +195,7 @@ int main(int argc, char* argv[]) {
 
     if (argc < 2) {
         std::cerr << "Usage: taskpp <command> [arguments]" << std::endl;
-        std::cout << "If you need help, type staskpp help\"\n\n";
+        std::cout << "If you need help, type taskpp help\n\n";
         return 1;
     }
 
